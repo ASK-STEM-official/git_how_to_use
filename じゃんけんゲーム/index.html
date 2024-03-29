@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃじゃんけん</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="field">
+        <div class="above">
+            <div class="enemy">
+                <h2 class="name">相手</h2>
+                <img class="box enemyBox" src="./images/question.jpg">
+            </div>
+            <h1>VS</h1>
+            <div class="mine">
+                <h2 class="name">自分</h2>
+                <img class="box myBox" src="./images/rock.png">
+            </div>
+        </div>
+        <div class="below">
+            <div class="choices">
+                <img class="choice rock" src="./images/rock.png">
+                <img class="choice scissors" src="./images/scissors.png">
+                <img class="choice paper" src="./images/paper.png">
+            </div>
+            <button class="btn">決定</button>
+        </div>
+    </div>
+    <div class="end none">
+        <h1 class="result">結果</h1>
+        <button class="replay">もう一度遊ぶ</button>
+    </div>
+
+    <div class="aiko none">
+        <img class="hukidasi" src="./images/hukidasi.png" alt="">
+        <h1 class="alert">もう一度!</h1>
+    </div>
+
+    <div class="motion none">
+        <h1>じゃんけん...</h1>
+        <div class="motions">
+            <img class="eneMotion" src="./images/rock.png">
+            <img class="myMotion" src="./images/rock.png">
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
