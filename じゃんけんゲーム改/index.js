@@ -1,12 +1,15 @@
-const choices=document.querySelector(".choices")
-const btn=document.querySelector(".btn")
-const enemy=document.querySelector(".enemy")
-const result=document.querySelector(".result")
+const choices=document.querySelector(".choices") //選択肢要素
+const btn=document.querySelector(".btn") //ボタン要素の取得
+const enemy=document.querySelector(".enemy") //敵の選択を表示する要素の取得
+const result=document.querySelector(".result") //結果表示の要素の取得
 
+//グーチョキパーの配列
 const arry=["グー","チョキ","パー"]
 
+//ボタン要素が押されたらイベントを開始
 btn.addEventListener('click',()=>{
-    enemy.value=arry[Math.floor(Math.random()*arry.length)]
+    enemy.value=arry[Math.floor(Math.random()*arry.length)]//敵の選択をarryからランダムに選ぶ
+    //プレイヤーの選択肢と敵の選択肢の比較
     if(choices.value==enemy.value){
         result.textContent="あいこ"
     }else{
