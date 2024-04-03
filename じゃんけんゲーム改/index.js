@@ -8,7 +8,9 @@ const arry=["グー","チョキ","パー"]
 
 //ボタン要素が押されたらイベントを開始
 btn.addEventListener('click',()=>{
-    enemy.value=arry[Math.floor(Math.random()*arry.length)]//敵の選択をarryからランダムに選ぶ
+    //敵の選択をarryからランダムに選ぶ
+    const random=Math.floor(Math.random()*arry.length)
+    enemy.value=arry[random]
     //プレイヤーの選択肢と敵の選択肢の比較
     if(choices.value==enemy.value){
         result.textContent="あいこ"
