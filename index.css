@@ -104,3 +104,23 @@ img {
 	width: 100%;
 	border: 1px solid black;
 }
+
+/* これより下headerで使ってるスタイルです */
+.header-title {
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.menu a.active {
+    font-weight: bold;
+}
