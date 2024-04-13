@@ -63,7 +63,7 @@
         <p>VSCodeと<a href="yougosyu.html#Github">Github</a>でデータを操作する方法はいくつかありますが、一番簡単でコマンドを打たない方法を教えます。最初はこれだけ覚えておけば大丈夫だと思います</p>
 
         <h3 id="rimoripo">1-1.Githubでリモートリポジトリを作ろう</h3>
-            <p>Githubにリモートリポジトリを作成します<br>
+            <p>Githubにリモート<a href="yougosyu.html#ripository">リポジトリ</a>を作成します<br>
             Gitや<a href="yougosyu.html#Github">Github</a>では操作しているフォルダのことを<a href="yougosyu.html#ripository">リポジトリ</a>といいます。リモート<a href="yougosyu.html#ripository">リポジトリ</a>はサーバーにあるリポジトリ、ローカル<a href="yougosyu.html#ripository">リポジトリ</a>はPCにある<a href="yougosyu.html#ripository">リポジトリ</a>のことを言います</p>
             <img src="temp_pic/5.jpg" alt="Createripo">
             <p><a href="yougosyu.html#Github">Github</a>のページにアクセスできたらとりあえずこのページをブックマークしておきましょう。後から開きやすくなります<br>
@@ -81,17 +81,17 @@
         <h3 id="kuro-n">1-3.VSCodeを使って作成したリモートリポジトリをクローンする</h3>
             <p>ここからはVSCodeでの操作に移ります</p>
             <img src="temp_pic/7.jpg" alt="VS">
-            <p>左側の<a href="yougosyu.html#ripository">リポジトリ</a>の複製、もしくは右側のGit<a href="yougosyu.html#ripository">リポジトリ</a>のクローンを押してください。</p>
+            <p>左側の<a href="yougosyu.html#ripository">リポジトリ</a>の複製、もしくは右側のGit<a href="yougosyu.html#ripository">リポジトリ</a>の<a href="yougosyu.html#clone">クローン</a>を押してください。</p>
             <img src="temp_pic/8.jpg" alt="VS">
             <p>Githubから複製を選択</p>
             <img src="temp_pic/9.jpg" alt="VS">
-            <p>クローンしたい<a href="yougosyu.html#ripository">リポジトリ</a>を選んでください。<br>
+            <p><a href="yougosyu.html#clone">クローン</a>したい<a href="yougosyu.html#ripository">リポジトリ</a>を選んでください。<br>
             そうするとエクスプローラーが開くのでフォルダの複製先を選んでください。ソフトウェアによっては日本語名の入ったファイルパスを参照できない場合があります。特にプログラミング系。そういう場合はCドライブ直下に保存すれば大丈夫です。</p>
             <p>今回は面倒なのでデスクトップにフォルダを作ります。今回はフォルダにGithub_Projectと付けました。別にどんな名前でも大丈夫です。</p>
-            <p>そうすると複製が開始されます。そのあと開くと複製したリポジトリの名前が付いたフォルダが開きます。今回は複製元のリポジトリに何も保存していなかったので</p>
+            <p>そうすると複製が開始されます。そのあと開くと複製したリポジトリの名前が付いたフォルダが開きます。今回は複製元の<a href="yougosyu.html#ripository">リポジトリ</a>に何も保存していなかったので</p>
         
     <h2 id="commit">2.変更したデータをコミットしよう</h2>
-        <p>データを新しく作成したから保存をしたり、大規模に改修をする前にバックアップを取ったりと、クローンした<a href="yougosyu.html#ripository">リポジトリ</a>にデータをアップロードするのをコミットといいます。</p>
+        <p>データを新しく作成したから保存をしたり、大規模に改修をする前にバックアップを取ったりと、<a href="yougosyu.html#clone">クローン</a>した<a href="yougosyu.html#ripository">リポジトリ</a>にデータをアップロードするのをコミットといいます。</p>
         <img src="temp_pic/10.jpg" alt="change">
         <p>変更点があるとこのようにファイル名の色が変わって、左側のソース管理タブに変更したファイルの数がついた丸いアイコンが出てきます。<br>
         これをクリックしてみましょう</p>
@@ -124,16 +124,16 @@
     <h2 id="pull">4.プルをしてGithubのローカルリポジトリとバージョンを合わせる</h2>
         <p>他のデバイスで編集したり、Githubで直接編集した場合など、Github側のバージョンと手元のローカル<a href="yougosyu.html#ripository">リポジトリ</a>のバージョンを合わせる必要があります。</p>
         <img src="temp_pic/15.jpg" alt="se-no">
-        <p>バージョン管理画面を開いて、三点マークを押すとプルするメニューが出てきます。これを押すとGithub側のバージョンと合わせることができます。</p>
+        <p>バージョン管理画面を開いて、三点マークを押すと<a href="yougosyu.html#pull">プル</a>するメニューが出てきます。これを押すとGithub側のバージョンと合わせることができます。</p>
 
     <h2 id="pururikuesuto">5.ブランチを作ってプルリクエストを出そう</h2>
-        <p>プルリクエストはあるブランチから別のブランチに変更を統合してくれないかなーって出すリクエストです。<br>
-        学校でやるならmainブランチから開発する機能や人によってブランチを分けて、ちゃんと動作が確認出来たら作業をしてたブランチからmainブランチにプルリクエストを出すのがほとんどだと思います。</p>
+        <p>プルリクエストはある<a href="yougosyu.html#ripository">ブランチ</a>から別の<a href="yougosyu.html#ripository">ブランチ</a>に変更を統合してくれないかなーって出すリクエストです。<br>
+        学校でやるならmain<a href="yougosyu.html#ripository">ブランチ</a>から開発する機能や人によって<a href="yougosyu.html#ripository">ブランチ</a>を分けて、ちゃんと動作が確認出来たら作業をしてた<a href="yougosyu.html#ripository">ブランチ</a>からmain<a href="yougosyu.html#ripository">ブランチ</a>にプルリクエストを出すのがほとんどだと思います。</p>
         <h3 id="createburanch">5-1.ブランチを作ろう</h3>
             <img src="temp_pic/16.jpg" alt="a-suisonooto----------">
             <p>これはこのページの作成風景です。このページは業務用ITソフトウェア班とWeb班で編集しています。そのためもしかしたらバージョンの競合が発生するかもしれません。</p>
             <img src="temp_pic/17.jpg" alt="pe-zisakuseimotaihendayo">
-            <p>ソース管理画面を開いてブランチを作りましょうソース管理のコミットメッセージボックス上のドロップダウンメニューを開きます。ブランチを選択してブランチの作成を選択します。</p>
+            <p>ソース管理画面を開いてブランチを作りましょうソース管理のコミットメッセージボックス上のドロップダウンメニューを開きます。<a href="yougosyu.html#ripository">ブランチ</a>を選択して<a href="yougosyu.html#ripository">ブランチ</a>の作成を選択します。</p>
             <img src="temp_pic/18.jpg" alt="moutyoideowaruhazu">
             <p>名前を入力する画面が出てきます。何してるかわかりやすくするために今回はtekisuto_editと付けてみました。何してるかわかるなら1とか2とかでも大丈夫だと思います。</p>
 
@@ -147,7 +147,7 @@
             青いCREATEボタンをクリックして出力してください</p>
             <p>BranchがGithub側にない場合はBranchを発行するか聞かれます。Branchを発行しないとデータを上げる先がなくなるので作成しておきましょう。
             Github側のブランチに何もデータがない場合、データを入れるかどうか聞かれます。</p>
-            <p>プルリクエストを出すとGithub側のリポジトリにプルリクエストが発行されます。問題なければコミットしてマージしましょう</p>      
+            <p>プルリクエストを出すとGithub側の<a href="yougosyu.html#ripository">リポジトリ</a>にプルリクエストが発行されます。問題なければコミットしてマージしましょう</p>      
 
     </div>
 </main>
