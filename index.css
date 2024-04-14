@@ -5,8 +5,12 @@
 }
 
 header {
-	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	text-align: center;
+	width: 100%;
 	padding: 30px;
 	background-color: rgb(55, 82, 105);
 	color: white;
@@ -53,7 +57,7 @@ main {
 	text-decoration: underline;
 }
 
-.toc-list li + li {
+.toc-list li+li {
 	margin-top: 25px;
 }
 
@@ -107,20 +111,33 @@ img {
 
 /* これより下headerで使ってるスタイルです */
 .header-title {
-    margin: 0;
+	margin: 0;
 }
 
 .menu {
-    display: flex;
+	display: flex;
 }
 
 .menu a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    margin: 0 10px;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	margin: 0 10px;
 }
 
 .menu a.active {
-    font-weight: bold;
+	font-weight: bold;
+}
+
+.titleBr {
+	display: none;
+}
+
+@media screen and (max-width:1024px) {
+	.titleBr {
+		display: block;
+	}
+	.menu {
+		flex-direction: column;
+	}
 }
