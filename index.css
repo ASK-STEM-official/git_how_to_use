@@ -211,19 +211,31 @@ img {
 }
 
 @media screen and (max-width:1024px) {
-	body {
-		transition: all .5s;
-		overflow-x: hidden;
+	body.show-nav {
+		overflow: hidden;
 	}
 
-	body.show-nav {
+	header {
+		transition: all .5s;
+	}
+	
+	main {
 		position: relative;
+		z-index: -1;
+		transition: all .5s;
+	}
+
+	body.show-nav header {
 		translate: calc(-1 * min(400px, calc(100% - 60px))) 0;
-		overflow: hidden;
+	}
+
+	body.show-nav main {
+		translate: calc(-1 * min(400px, calc(100% - 60px))) 0;
 	}
 
 	.header {
 		align-items: center;
+		overflow: hidden;
 	}
 
 	.header-title {
@@ -235,7 +247,7 @@ img {
 	}
 
 	.nav {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 100%;
 		width: min(400px, calc(100% - 60px));
@@ -254,6 +266,7 @@ img {
 		translate: -100% 0;
 		background-color: rgba(0, 0, 0, 0.2);
 		transition: opacity .5s;
+		z-index: 100;
 		pointer-events: none;
 	}
 
