@@ -10,6 +10,7 @@ header {
 	width: 100%;
 	box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.2);
 	background-color: rgb(55, 82, 105);
+	z-index: 1;
 }
 
 .header {
@@ -218,11 +219,10 @@ img {
 	header {
 		transition: all .5s;
 	}
-	
+
 	main {
-		position: relative;
-		z-index: -1;
 		transition: all .5s;
+		z-index: 0;
 	}
 
 	body.show-nav header {
@@ -230,6 +230,7 @@ img {
 	}
 
 	body.show-nav main {
+		position: relative;
 		translate: calc(-1 * min(400px, calc(100% - 60px))) 0;
 	}
 
